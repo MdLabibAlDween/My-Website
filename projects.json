@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "E-Commerce Platform",
+    "category": "FULL STACK APP",
+    "description": "A comprehensive e-commerce solution with Next.js frontend, Node.js backend, and complete Stripe integration for seamless checkout.",
+    "githubLink": "https://github.com/mdlabibaldween/ecommerce-platform",
+    "liveLink": "#",
+    "tags": ["Next.js", "Node.js", "MongoDB", "Stripe"]
+  },
+  {
+    "id": 2,
+    "name": "AI Chat Interface",
+    "category": "FRONTEND APP",
+    "description": "A sleek, responsive chat interface interacting with OpenAI's API. Built with React and styled with Tailwind CSS for optimal user experience.",
+    "githubLink": "https://github.com/mdlabibaldween/ai-chat-interface",
+    "liveLink": "#",
+    "tags": ["React", "Tailwind CSS", "OpenAI API"]
+  },
+  {
+    "id": 3,
+    "name": "Real-time Analytics Dashboard",
+    "category": "FULL STACK APP",
+    "description": "A real-time data visualization dashboard utilizing WebSockets for live updates and Recharts for interactive graphical data representation.",
+    "githubLink": "https://github.com/mdlabibaldween/analytics-dashboard",
+    "liveLink": "#",
+    "tags": ["Vue.js", "Express", "Socket.io", "PostgreSQL"]
+  }
+]

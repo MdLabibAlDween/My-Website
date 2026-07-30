@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md Labib Al Dween — Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Md Labib Al Dween, Full Stack Developer. Building high performance web applications, intuitive interfaces, and scalable systems.">
+  
+  <!-- Google Fonts: Syne & Inter & Bebas Neue -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="Images/logo.png">
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="preloader" class="preloader">
+    <div class="loader-content">
+      <div class="loader-logo">MD LABIB AL DWEEN</div>
+      <div class="loader-bar-bg">
+        <div id="loader-bar" class="loader-bar"></div>
+      </div>
+      <div id="loader-text" class="loader-text">Loading - Md Labib Al Dween 0%</div>
+    </div>
+  </div>
+
+  <!-- Scroll Canvas Background -->
+  <div class="canvas-container">
+    <canvas id="scroll-canvas"></canvas>
+    <div class="canvas-overlay"></div>
+  </div>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+  <!-- Mobile Sidebar Menu -->
+  <aside class="sidebar-menu" id="sidebar-menu">
+    <div class="sidebar-header">
+      <span class="sidebar-logo">LABIB</span>
+      <button class="close-sidebar-btn" id="close-sidebar-btn" aria-label="Close Menu"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <nav class="sidebar-nav">
+      <a href="https://blog.labibaldween.com" class="sidebar-link">Blog</a>
+      <a href="#skills" class="sidebar-link">Skills</a>
+      <a href="#projects" class="sidebar-link">Projects</a>
+      <a href="#community" class="sidebar-link">Community</a>
+      <a href="#contact" class="sidebar-link">Contact</a>
+      <div class="sidebar-actions">
+        <a href="#contact" class="header-btn">Hire Me</a>
+        <a href="https://academy.labibaldween.com" target="_blank" rel="noopener" class="header-btn primary">Join Academy</a>
+      </div>
+    </nav>
+  </aside>
+
+  <!-- Main Content Wrapper -->
+  <main class="content-wrapper">
+
+    <!-- Top Navigation Bar -->
+    <header class="top-bar" id="top-nav">
+      <!-- Left: Hamburger + Brand Logo -->
+      <div class="top-bar-left">
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Open Menu"><i class="fa-solid fa-bars"></i></button>
+        <a href="/" class="brand-logo">
+          <span class="logo-red">MD LABIB</span> AL DWEEN
+        </a>
+      </div>
+
+      <!-- Right: Links & Action Buttons -->
+      <div class="top-bar-right">
+        <nav class="nav-links">
+          <a href="https://blog.labibaldween.com" target="_blank" rel="noopener" class="nav-link">Blog</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#community" class="nav-link">Community</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <div class="nav-buttons">
+          <a href="#contact" class="header-btn">Hire Me</a>
+          <a href="https://academy.labibaldween.com" target="_blank" rel="noopener" class="header-btn primary">Join Academy <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-grid">
+        <div class="hero-glass-card">
+          <span class="greeting-badge"><i class="fa-solid fa-code"></i> FULL STACK DEVELOPER</span>
+          <h1 class="hero-name">MD LABIB<br><span class="highlight-red">AL DWEEN</span></h1>
+          <p class="hero-bio">
+            Engineered to build fast, scalable, and visually compelling web applications. 
+            Crafting seamlessly connected full-stack systems from database design to reactive frontend interfaces.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="hero-btn-primary">EXPLORE PROJECTS <i class="fa-solid fa-arrow-down"></i></a>
+            <a href="#contact" class="hero-btn-secondary">GET IN TOUCH</a>
+          </div>
+        </div>
+
+        <div class="hero-stats-glass">
+          <div class="stat-box">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Clean Code & Architecture</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">Full-Stack</span>
+            <span class="stat-label">Frontend, Backend & API</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">24/7</span>
+            <span class="stat-label">Continuous Innovation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section" id="skills">
+      <div class="section-header">
+        <div>
+          <span class="section-subtitle">EXPERTISE</span>
+          <h2 class="section-title">SKILLS & TECHNOLOGIES</h2>
+        </div>
+      </div>
+      <div class="skills-grid" id="skills-container"></div>
+    </section>
+
+    <!-- Dynamic Projects Section -->
+    <section class="projects-section" id="projects">
+      <div class="section-header">
+        <div>
+          <span class="section-subtitle">PORTFOLIO</span>
+          <h2 class="section-title">FEATURED PROJECTS</h2>
+        </div>
+      </div>
+      <div class="projects-grid" id="projects-container">
+        <!-- Project cards dynamically rendered via JavaScript -->
+      </div>
+    </section>
+
+    <!-- Community & Contact Grid Section -->
+    <section class="info-grid">
+      
+      <!-- Community Column (Left Side) -->
+      <div class="info-col info-col-left" id="community">
+        <span class="section-subtitle">DISCORD SERVER</span>
+        <h2 class="col-title">JOIN COMMUNITY</h2>
+        <div class="glass-card community-card">
+          <div class="card-badge-icon"><i class="fa-brands fa-discord"></i></div>
+          <h3 class="card-heading">Developer Ecosystem</h3>
+          <p class="card-desc">
+            Connect with fellow developers, share code reviews, discuss full-stack tech, and collaborate on exciting open-source projects inside our dedicated Discord server.
+          </p>
+          <a href="https://discord.gg/5Ay3sFZEqG" target="_blank" rel="noopener noreferrer" class="discord-cta-btn">
+            <span>JOIN DISCORD COMMUNITY</span>
+            <i class="fa-brands fa-discord"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact / Hire Column (Right Side - Shifted Right) -->
+      <div class="info-col info-col-right" id="contact">
+        <span class="section-subtitle">LET'S CONNECT</span>
+        <h2 class="col-title">CONTACT</h2>
+        <div class="glass-card contact-card">
+          <h3 class="card-heading">HAVE A PROJECT OR OPPORTUNITY?</h3>
+          <p class="card-desc">
+            I'm open for freelance contracts, full-stack development projects, and engineering collaborations. Reach out directly through any platform below:
+          </p>
+
+          <div class="contact-interactive-grid">
+            
+            <!-- Email -->
+            <a href="javascript:void(0)" class="contact-chip" onclick="copyEmail(this)">
+              <div class="chip-icon"><i class="fa-regular fa-copy"></i></div>
+              <div class="chip-content">
+                <span class="chip-label">EMAIL ME</span>
+                <span class="chip-value">mdlabibaldween@gmail.com</span>
+              </div>
+            </a>
+
+            <!-- Discord -->
+            <div class="contact-chip" onclick="copyDiscord(this)">
+              <div class="chip-icon"><i class="fa-brands fa-discord"></i></div>
+              <div class="chip-content">
+                <span class="chip-label">DISCORD</span>
+                <span class="chip-value">mdlabibaldween</span>
+              </div>
+              <span class="chip-badge discord-username-badge">USERNAME</span>
+            </div>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/mdlabibaldween" target="_blank" rel="noopener" class="contact-chip">
+              <div class="chip-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="chip-content">
+                <span class="chip-label">LINKEDIN</span>
+                <span class="chip-value">linkedin.com/in/mdlabibaldween</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square chip-arrow"></i>
+            </a>
+
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@MdLabibAlDweenOfficial" target="_blank" rel="noopener" class="contact-chip">
+              <div class="chip-icon"><i class="fa-brands fa-youtube"></i></div>
+              <div class="chip-content">
+                <span class="chip-label">YOUTUBE CHANNEL</span>
+                <span class="chip-value">@MdLabibAlDweenOfficial</span>
+              </div>
+              <i class="fa-solid fa-arrow-up-right-from-square chip-arrow"></i>
+            </a>
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+      <div class="footer-content">
+        <p class="footer-copyright">Copyright &copy; Md Labib Al Dween. All rights reserved.</p>
+        <p class="footer-subtext">Engineered with precision & interactive scroll performance.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+  <script>
+  function copyEmail(el) {
+    const email = 'mdlabibaldween@gmail.com';
+    navigator.clipboard.writeText(email);
+    const icon = el.querySelector('.chip-icon i');
+    const orig = icon.className;
+    icon.className = 'fa-solid fa-check';
+    el.style.borderColor = '#22c55e';
+    setTimeout(() => {
+      icon.className = orig;
+      el.style.borderColor = '';
+    }, 2000);
+  }
+  function copyDiscord(el) {
+    const username = 'mdlabibaldween';
+    navigator.clipboard.writeText(username);
+    const badge = el.querySelector('.chip-badge');
+    const orig = badge.textContent;
+    badge.textContent = 'COPIED!';
+    badge.style.color = '#22c55e';
+    badge.style.borderColor = '#22c55e';
+    el.style.borderColor = '#22c55e';
+    setTimeout(() => {
+      badge.textContent = orig;
+      badge.style.color = '';
+      badge.style.borderColor = '';
+      el.style.borderColor = '';
+    }, 2000);
+  }
+  </script>
+</body>
+</html>

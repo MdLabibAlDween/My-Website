@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "icon": "fa-solid fa-code",
+    "title": "Core Web Architecture",
+    "items": [
+      { "label": "Frontend", "text": "React (Next.js), Vue" },
+      { "label": "Backend", "text": "Node.js (Express/Nest), Python (FastAPI/Django)" },
+      { "label": "Databases", "text": "PostgreSQL, MySQL, MongoDB, Redis" },
+      { "label": "API Design", "text": "RESTful interfaces, GraphQL" }
+    ]
+  },
+  {
+    "id": 2,
+    "icon": "fa-solid fa-brain",
+    "title": "AI Integration & Engineering",
+    "items": [
+      { "label": "LLM Orchestration", "text": "OpenAI/Anthropic APIs, LangChain" },
+      { "label": "RAG", "text": "Vector databases (Pinecone, pgvector), embeddings" },
+      { "label": "Agent Workflows", "text": "Tool calling, LangGraph, CrewAI" },
+      { "label": "Open-Source AI", "text": "Local inference via Ollama, Hugging Face" }
+    ]
+  },
+  {
+    "id": 3,
+    "icon": "fa-solid fa-cloud",
+    "title": "DevOps & Cloud Infrastructure",
+    "items": [
+      { "label": "Containerization", "text": "Docker, Docker Compose" },
+      { "label": "CI/CD", "text": "GitHub Actions, GitLab CI" },
+      { "label": "Cloud", "text": "AWS, Google Cloud Platform, Vercel" }
+    ]
+  },
+  {
+    "id": 4,
+    "icon": "fa-solid fa-shield-halved",
+    "title": "Security & Quality Assurance",
+    "items": [
+      { "label": "Auth", "text": "OAuth 2.0, JWT, RBAC" },
+      { "label": "Testing", "text": "Jest, PyTest, Playwright" },
+      { "label": "Security", "text": "Input sanitization, CORS, env protection" }
+    ]
+  }
+]
